@@ -1,0 +1,143 @@
+.labb-team-members .labb-team-member .labb-social-list {
+  margin-top: 20px; }
+  .labb-team-members .labb-team-member .labb-social-list .labb-social-list-item {
+    display: inline;
+    margin: 0 15px 0 0; }
+.labb-team-members .labb-team-member .labb-team-member-details {
+  font-size: 15px;
+  line-height: 24px; }
+.labb-team-members .labb-team-member .labb-team-member-text .labb-title {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  clear: none;
+  margin-top: 0;
+  margin-bottom: 10px; }
+.labb-team-members .labb-team-member .labb-team-member-text .labb-team-member-position {
+  font-size: 15px;
+  line-height: 24px;
+  font-style: italic;
+  color: #888;
+  margin-bottom: 10px; }
+
+/*-------- Style 1 ----------------*/
+.labb-team-members.labb-style1 .labb-team-member-wrapper {
+  float: left;
+  padding: 10px; }
+.labb-team-members.labb-style1 .labb-team-member {
+  max-width: 320px;
+  margin: 0 auto 40px; }
+  .labb-team-members.labb-style1 .labb-team-member .labb-image-wrapper {
+    text-align: center;
+    position: relative; }
+    .labb-team-members.labb-style1 .labb-team-member .labb-image-wrapper img {
+      max-width: 100%;
+      margin: 0 auto 30px;
+      -webkit-transition: all .3s ease-in-out 0s;
+      transition: all .3s ease-in-out 0s; }
+    .labb-team-members.labb-style1 .labb-team-member .labb-image-wrapper .labb-social-list {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 40%;
+      z-index: 2; }
+      @media only screen and (max-width: 767px) {
+        .labb-team-members.labb-style1 .labb-team-member .labb-image-wrapper .labb-social-list {
+          position: relative;
+          top: 0; } }
+      .labb-team-members.labb-style1 .labb-team-member .labb-image-wrapper .labb-social-list i {
+        font-size: 26px;
+        color: #fff;
+        opacity: 0;
+        -webkit-transition: all .3s ease-in-out 0s;
+        transition: all .3s ease-in-out 0s; }
+        .labb-team-members.labb-style1 .labb-team-member .labb-image-wrapper .labb-social-list i:hover {
+          color: #ccc; }
+        @media only screen and (max-width: 767px) {
+          .labb-team-members.labb-style1 .labb-team-member .labb-image-wrapper .labb-social-list i {
+            color: inherit;
+            opacity: 1; }
+            .labb-team-members.labb-style1 .labb-team-member .labb-image-wrapper .labb-social-list i:hover {
+              color: inherit; } }
+  .labb-team-members.labb-style1 .labb-team-member:hover .labb-image-wrapper img {
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%); }
+    @media only screen and (max-width: 767px) {
+      .labb-team-members.labb-style1 .labb-team-member:hover .labb-image-wrapper img {
+        -webkit-filter: brightness(80%);
+                filter: brightness(80%); } }
+  .labb-team-members.labb-style1 .labb-team-member:hover .labb-image-wrapper .labb-social-list i {
+    opacity: 1; }
+  .labb-team-members.labb-style1 .labb-team-member .labb-team-member-text {
+    text-align: center;
+    max-width: 650px; }
+    .labb-team-members.labb-style1 .labb-team-member .labb-team-member-text .labb-title {
+      margin-bottom: 10px; }
+  .labb-team-members.labb-style1 .labb-team-member .labb-social-list {
+    margin: 10px auto; }
+
+/*-------- Style 2 ----------------*/
+.labb-team-members.labb-style2 {
+  position: relative;
+  max-width: 960px; }
+  .labb-team-members.labb-style2 .labb-team-member-wrapper {
+    clear: both;
+    margin-top: 100px;
+    /* Make that flip-flop possible */ }
+    .labb-team-members.labb-style2 .labb-team-member-wrapper:first-child {
+      margin-top: 0; }
+    .labb-team-members.labb-style2 .labb-team-member-wrapper .labb-image-wrapper {
+      float: left;
+      position: relative; }
+      .labb-team-members.labb-style2 .labb-team-member-wrapper .labb-image-wrapper img {
+        max-width: 320px;
+        -webkit-transition: all .3s ease-in-out 0s;
+        transition: all .3s ease-in-out 0s; }
+    .labb-team-members.labb-style2 .labb-team-member-wrapper .labb-team-member-text {
+      margin: 10px 0 0;
+      vertical-align: middle;
+      padding-top: 20px; }
+      .labb-team-members.labb-style2 .labb-team-member-wrapper .labb-team-member-text .labb-title {
+        margin-bottom: 5px; }
+      .labb-team-members.labb-style2 .labb-team-member-wrapper .labb-team-member-text .labb-team-member-details {
+        margin: 10px 0 10px; }
+      .labb-team-members.labb-style2 .labb-team-member-wrapper .labb-team-member-text .labb-social-list i {
+        font-size: 24px; }
+    .labb-team-members.labb-style2 .labb-team-member-wrapper:hover .labb-image-wrapper img {
+      -webkit-filter: brightness(80%);
+              filter: brightness(80%); }
+  .labb-team-members.labb-style2 .labb-team-member-wrapper:nth-child(odd) .labb-image-wrapper {
+    margin-right: 50px; }
+  .labb-team-members.labb-style2 .labb-team-member-wrapper:nth-child(even) .labb-image-wrapper {
+    float: right;
+    margin-left: 50px; }
+  .labb-team-members.labb-style2 .labb-team-member-wrapper:nth-child(even) .labb-team-member-text .labb-title, .labb-team-members.labb-style2 .labb-team-member-wrapper:nth-child(even) .labb-team-member-text .labb-team-member-position, .labb-team-members.labb-style2 .labb-team-member-wrapper:nth-child(even) .labb-team-member-text .labb-team-member-details, .labb-team-members.labb-style2 .labb-team-member-wrapper:nth-child(even) .labb-team-member-text .labb-social-list {
+    text-align: right; }
+
+@media only screen and (max-width: 767px) {
+  .labb-team-members.labb-style2 .labb-team-member-wrapper {
+    margin-top: 75px; }
+  .labb-team-members.labb-style2 .labb-team-member .labb-image-wrapper, .labb-team-members.labb-style2 .labb-team-member .labb-team-member-text {
+    width: 100%;
+    float: none; }
+  .labb-team-members.labb-style2 .labb-team-member .labb-image-wrapper {
+    text-align: center; }
+    .labb-team-members.labb-style2 .labb-team-member .labb-image-wrapper img {
+      margin: 0 auto 20px; }
+  .labb-team-members.labb-style2 .labb-team-member .labb-team-member-text {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 0; }
+    .labb-team-members.labb-style2 .labb-team-member .labb-team-member-text .labb-title, .labb-team-members.labb-style2 .labb-team-member .labb-team-member-text .labb-team-member-position, .labb-team-members.labb-style2 .labb-team-member .labb-team-member-text .labb-team-member-details, .labb-team-members.labb-style2 .labb-team-member .labb-team-member-text .labb-social-list {
+      text-align: center !important; } }
+.labb-dark-bg .labb-team-members .labb-team-member .labb-team-member-details {
+  color: #909090; }
+.labb-dark-bg .labb-team-members .labb-team-member .labb-team-member-text .labb-title {
+  color: #e5e5e5; }
+.labb-dark-bg .labb-team-members .labb-team-member .labb-team-member-text .labb-team-member-position {
+  color: #505050; }
+
+/*# sourceMappingURL=frontend.css.map */

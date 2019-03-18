@@ -1,0 +1,1 @@
+(function($){FLBuilder.registerModuleHelper("labb-odometers",{rules:{percentage:{number:true}}})})(jQuery);

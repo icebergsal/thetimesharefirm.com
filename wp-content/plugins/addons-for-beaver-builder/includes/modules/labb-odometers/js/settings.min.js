@@ -1,0 +1,1 @@
+(function($){FLBuilder.registerModuleHelper("labb-odometers",{rules:{start_value:{number:true},stop_value:{number:true}}})})(jQuery);

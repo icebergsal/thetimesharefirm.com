@@ -1,0 +1,92 @@
+.labb-heading {
+  text-align: center;
+  margin: 0 auto 60px;
+  max-width: 640px; }
+  @media only screen and (max-width: 767px) {
+    .labb-heading {
+      margin-bottom: 40px; } }
+  .labb-heading .labb-text {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto; }
+    @media only screen and (max-width: 767px) {
+      .labb-heading .labb-text {
+        font-size: 15px;
+        line-height: 26px; } }
+  .labb-heading.labb-alignleft, .labb-heading.labb-alignright {
+    margin: 0; }
+    .labb-heading.labb-alignleft .labb-text, .labb-heading.labb-alignright .labb-text {
+      margin: 0; }
+  .labb-heading.labb-alignleft {
+    text-align: left; }
+  .labb-heading.labb-alignright {
+    text-align: right; }
+
+.labb-heading .labb-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  margin: 0 auto 20px;
+  color: #333;
+  font-weight: bold; }
+  @media only screen and (max-width: 767px) {
+    .labb-heading .labb-title {
+      font-size: 24px;
+      line-height: 32px; } }
+.labb-dark-bg .labb-heading .labb-title {
+  color: #e5e5e5; }
+.labb-dark-bg .labb-heading .labb-subtitle {
+  color: #B0B0B0; }
+.labb-dark-bg .labb-heading .labb-text {
+  color: #909090; }
+.labb-heading.labb-alignleft .labb-title, .labb-heading.labb-alignright .labb-title {
+  margin: 0 0 20px; }
+
+.labb-heading .labb-subtitle {
+  margin: 0 auto 5px;
+  color: #888;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding: 0 10px; }
+  @media only screen and (max-width: 767px) {
+    .labb-heading .labb-subtitle {
+      font-size: 11px;
+      line-height: 18px; } }
+.labb-heading.labb-alignleft .labb-subtitle, .labb-heading.labb-alignright .labb-subtitle {
+  margin: 0 0 5px;
+  padding: 0; }
+  .labb-heading.labb-alignleft .labb-subtitle:before, .labb-heading.labb-alignleft .labb-subtitle:after, .labb-heading.labb-alignright .labb-subtitle:before, .labb-heading.labb-alignright .labb-subtitle:after {
+    display: none; }
+
+.labb-heading.labb-style3 {
+  margin: 0 auto 30px; }
+  .labb-heading.labb-style3 .labb-title {
+    font-size: 22px;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    .labb-heading.labb-style3 .labb-title:after {
+      width: 35px;
+      height: 1px;
+      background: #aaa;
+      display: block;
+      content: ""; }
+    .labb-heading.labb-style3 .labb-title:after {
+      margin: 10px auto 20px; }
+      .labb-dark-bg .labb-heading.labb-style3 .labb-title:after {
+        background: #909090; }
+    @media only screen and (max-width: 767px) {
+      .labb-heading.labb-style3 .labb-title {
+        font-size: 16px;
+        line-height: 24px; } }
+  .labb-heading.labb-style3.labb-alignleft, .labb-heading.labb-style3.labb-alignright {
+    margin: 0 0 30px; }
+    .labb-heading.labb-style3.labb-alignleft .labb-title:after, .labb-heading.labb-style3.labb-alignright .labb-title:after {
+      margin: 10px 0 20px; }
+
+/*# sourceMappingURL=frontend.css.map */

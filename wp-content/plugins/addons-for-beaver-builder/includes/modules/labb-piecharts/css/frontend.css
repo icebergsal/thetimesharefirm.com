@@ -1,0 +1,58 @@
+/*---- Pie Charts --------- */
+.labb-piechart {
+  position: relative;
+  text-align: center;
+  float: left;
+  overflow: hidden;
+  float: left;
+  padding: 10px; }
+  .labb-piechart .labb-chart-title {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 0 15px 0; }
+  .labb-piechart .labb-percentage {
+    position: relative; }
+    .labb-piechart .labb-percentage canvas {
+      position: relative;
+      top: 0;
+      left: 0;
+      max-width: 100%;
+      margin: 0 auto; }
+    .labb-piechart .labb-percentage .labb-percentage-value {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .labb-piechart .labb-percentage .labb-label {
+      text-align: center;
+      max-width: 85%;
+      margin: 0 auto;
+      color: #888; }
+      .labb-dark-bg .labb-piechart .labb-percentage .labb-label {
+        color: #909090; }
+    .labb-piechart .labb-percentage span {
+      font-size: 60px;
+      line-height: 60px;
+      font-weight: 300;
+      text-align: center;
+      color: #333;
+      font-weight: bolder; }
+      .labb-dark-bg .labb-piechart .labb-percentage span {
+        color: #e5e5e5; }
+    .labb-piechart .labb-percentage sup {
+      font-size: 18px;
+      vertical-align: super; }
+  .labb-piechart.dark-bg .labb-label {
+    color: #fff; }
+  .labb-piechart.dark-bg .labb-percentage span {
+    color: #eee; }
+
+@media only screen and (max-width: 479px) {
+  .labb-piechart canvas {
+    margin-bottom: 15px; } }
+
+/*# sourceMappingURL=frontend.css.map */

@@ -1,0 +1,57 @@
+.labb-testimonials-slider {
+  position: relative; }
+  .labb-testimonials-slider.labb-container {
+    max-width: 900px;
+    margin: 0 auto; }
+  .labb-testimonials-slider .labb-testimonial-text {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    line-height: 32px;
+    font-style: italic;
+    color: #666; }
+    .labb-dark-bg .labb-testimonials-slider .labb-testimonial-text {
+      color: #ccc; }
+    .labb-testimonials-slider .labb-testimonial-text i {
+      color: #ccc;
+      font-size: 32px;
+      display: block;
+      margin-bottom: 35px;
+      background: none;
+      width: auto;
+      height: auto; }
+      .labb-dark-bg .labb-testimonials-slider .labb-testimonial-text i {
+        color: #ddd; }
+  .labb-testimonials-slider .labb-testimonial-user {
+    display: table;
+    margin: 0 auto; }
+    .labb-testimonials-slider .labb-testimonial-user .labb-image-wrapper {
+      display: table-cell; }
+      .labb-testimonials-slider .labb-testimonial-user .labb-image-wrapper img {
+        max-width: 64px;
+        border-radius: 50%;
+        padding-right: 15px; }
+    .labb-testimonials-slider .labb-testimonial-user .labb-text {
+      display: table-cell;
+      vertical-align: middle;
+      color: #888; }
+      .labb-dark-bg .labb-testimonials-slider .labb-testimonial-user .labb-text {
+        color: #909090; }
+      .labb-testimonials-slider .labb-testimonial-user .labb-text .labb-author-name {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: #333;
+        text-transform: uppercase;
+        clear: none;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 5px; }
+        .labb-dark-bg .labb-testimonials-slider .labb-testimonial-user .labb-text .labb-author-name {
+          color: #e5e5e5; }
+
+/*# sourceMappingURL=frontend.css.map */

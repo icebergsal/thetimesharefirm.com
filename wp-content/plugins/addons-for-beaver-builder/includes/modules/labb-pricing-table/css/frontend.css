@@ -1,0 +1,146 @@
+/* ---------- Pricing table --------- */
+.labb-pricing-table .labb-pricing-plan {
+  float: left;
+  padding: 10px; }
+
+.labb-center {
+  text-align: center; }
+
+.labb-pricing-table {
+  padding: 0; }
+  .labb-pricing-table .labb-top-header {
+    padding: 15px 0;
+    background-color: #494949;
+    border-bottom: 1px solid #2c2b2b; }
+    .labb-pricing-table .labb-top-header .labb-plan-name {
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      color: #333;
+      text-transform: uppercase;
+      clear: none;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 20px;
+      line-height: 32px;
+      color: #fefefe;
+      margin: 0; }
+    .labb-pricing-table .labb-top-header img {
+      margin-top: 15px; }
+    .labb-pricing-table .labb-top-header .labb-tagline {
+      display: block;
+      font-size: 15px;
+      line-height: 24px;
+      color: #EDEDED;
+      text-transform: none;
+      text-align: center;
+      margin-bottom: 5px; }
+  .labb-pricing-table .labb-pricing-plan {
+    background: #fff;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
+    margin-bottom: 30px; }
+    .labb-pricing-table .labb-pricing-plan:hover .labb-purchase {
+      background: #e5e5e5; }
+    .labb-pricing-table .labb-pricing-plan .labb-plan-price {
+      color: #fff;
+      font-size: 22px;
+      line-height: 28px;
+      font-weight: 700;
+      margin: 0; }
+      .labb-pricing-table .labb-pricing-plan .labb-plan-price span {
+        font-size: 22px;
+        line-height: 32px; }
+  .labb-pricing-table .labb-plan-header {
+    padding: 30px 0 30px;
+    background-color: #494949; }
+  .labb-pricing-table .labb-plan-price .labb-text {
+    display: inline-block;
+    padding: 6px 25px;
+    border-radius: 25px;
+    background: #2C2B2B; }
+  .labb-pricing-table .labb-plan-price sup {
+    font-size: 18px;
+    line-height: 32px;
+    vertical-align: top;
+    margin-right: 2px;
+    position: static; }
+  .labb-pricing-table .labb-plan-details {
+    padding: 15px 0;
+    margin: 0;
+    border: 1px solid #eee; }
+    .labb-pricing-table .labb-plan-details .labb-pricing-item {
+      list-style: none;
+      display: block;
+      padding: 6px;
+      margin: 0;
+      -webkit-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      text-align: center; }
+      .labb-pricing-table .labb-plan-details .labb-pricing-item i {
+        color: #777;
+        font-size: 18px;
+        display: inline;
+        margin-right: 8px; }
+      .labb-pricing-table .labb-plan-details .labb-pricing-item .labb-title {
+        color: #838383;
+        margin-bottom: 10px; }
+      .labb-pricing-table .labb-plan-details .labb-pricing-item .labb-value-wrap {
+        display: block; }
+        .labb-pricing-table .labb-plan-details .labb-pricing-item .labb-value-wrap:after {
+          position: relative;
+          content: "";
+          background: #ddd;
+          width: 120px;
+          height: 1px;
+          display: block;
+          margin: 12px auto 0; }
+      .labb-pricing-table .labb-plan-details .labb-pricing-item .labb-value {
+        color: #444;
+        font-size: 24px;
+        line-height: 32px;
+        display: inline; }
+      .labb-pricing-table .labb-plan-details .labb-pricing-item s {
+        color: #b4c9d3; }
+      .labb-pricing-table .labb-plan-details .labb-pricing-item:last-child .labb-value-wrap:after {
+        display: none; }
+  .labb-pricing-table .labb-purchase {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 0 auto;
+    background: #f1f1f1;
+    -webkit-transition: all 0.1s ease-in-out 0s;
+    transition: all 0.1s ease-in-out 0s;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee; }
+    .labb-pricing-table .labb-purchase a {
+      padding: 12px 25px;
+      border-radius: 5px;
+      letter-spacing: 0;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 6px;
+      font-weight: bold; }
+  .labb-pricing-table .labb-pricing-plan.labb-highlight {
+    background: #f5f5f5;
+    margin-top: -10px; }
+    .labb-pricing-table .labb-pricing-plan.labb-highlight .labb-plan-details {
+      border-color: #e5e5e5; }
+    .labb-pricing-table .labb-pricing-plan.labb-highlight .labb-top-header {
+      padding: 20px 0; }
+    .labb-pricing-table .labb-pricing-plan.labb-highlight .labb-pricing-table .labb-top-header .labb-plan-name {
+      color: #28c2ba !important; }
+    .labb-pricing-table .labb-pricing-plan.labb-highlight .labb-purchase {
+      padding: 20px 0;
+      background-color: #e5e5e5;
+      border-color: #ddd; }
+
+/*# sourceMappingURL=frontend.css.map */

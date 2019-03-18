@@ -1,0 +1,210 @@
+@import "../../../../assets/css/labb-lib";
+
+/* Style 1 */
+.labb-services.labb-style1 {
+  .labb-service {
+    .labb-icon-wrapper span {
+      display: block;
+      text-align: center;
+      font-size: 96px;
+      line-height: 1;
+      margin-bottom: 20px;
+      transition: color .4s ease-in-out 0s;
+      }
+    .labb-image-wrapper img {
+      display: block;
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto 25px;
+      transition: all .4s ease-in-out 0s;
+      }
+    .labb-service-text {
+      text-align: center;
+      max-width: 300px;
+      margin: 0 auto;
+      .labb-title {
+        @include labb-heading-style();
+        margin-bottom: 20px;
+        }
+      }
+    &:hover {
+      .labb-image-wrapper img {
+        transform: scale(0.9, 0.9);
+        }
+      }
+    }
+  }
+/* Style 2 */
+
+.labb-services.labb-style2 {
+  .labb-service {
+    .labb-image-wrapper img, .labb-icon-wrapper span {
+      float: left;
+      margin-right: 18px;
+      }
+    .labb-icon-wrapper span {
+      font-size: 24px;
+      line-height: 32px;
+      }
+    .labb-service-text .labb-title {
+      @include labb-heading-style();
+      margin-bottom: 20px;
+      }
+    }
+  }
+/* Style 3 */
+
+.labb-services.labb-style3 {
+  .labb-service {
+    .labb-icon-wrapper span {
+      display: block;
+      text-align: left;
+      font-size: 80px;
+      line-height: 1;
+      margin-bottom: 25px;
+      color: #555;
+      .labb-dark-bg & {
+        color: #c5c5c5;
+        }
+      }
+    .labb-image-wrapper img {
+      display: block;
+      max-width: 100%;
+      text-align: left;
+      margin-bottom: 25px;
+      }
+    .labb-service-text {
+      text-align: left;
+      max-width: 300px;
+      margin: 0;
+      font-size: 14px;
+      line-height: 32px;
+      color: #888;
+      ul.labb-services-list {
+        padding: 0;
+        margin: 0;
+        border: none;
+        }
+      ul.labb-services-list li {
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        line-height: 42px;
+        &:hover {
+          padding: 0;
+          }
+        .labb-dark-bg & {
+          border-color: #333;
+          }
+        }
+      ul.labb-services-list li:before {
+        @include labb-icon-font();
+        position: relative;
+        display: inline-block;
+        height: auto;
+        width: auto;
+        background: none;
+        float: none;
+        vertical-align: middle;
+        margin: 0 15px 0 0;
+        content: "\e913";
+        color: #BBBBBB;
+        font-size: 12px;
+        line-height: 1;
+        .labb-dark-bg & {
+          color: #606060;
+          }
+        }
+      .labb-title {
+        @include labb-heading-style();
+        margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+/* Style 4 */
+
+.labb-services.labb-style4 {
+  .labb-service {
+    margin-bottom: 60px;
+    .labb-image-wrapper img, .labb-icon-wrapper span {
+      display: block;
+      margin-bottom: 20px;
+      text-align: left;
+      }
+    .labb-icon-wrapper span {
+      font-size: 36px;
+      line-height: 1;
+      color: #888;
+      }
+    .labb-service-text .labb-title {
+      @include labb-heading-style();
+      }
+    }
+  }
+
+/* Style 5 */
+.labb-services.labb-style5 {
+  .labb-service {
+    margin-bottom: 80px;
+    @include respond-to-max(767) {
+      margin-bottom: 50px;
+      }
+    .labb-icon-wrapper span {
+      display: block;
+      text-align: center;
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 15px;
+      color: #999;
+      transition: color .4s ease-in-out 0s;
+      }
+    .labb-image-wrapper img {
+      display: block;
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto 25px;
+      transition: all .4s ease-in-out 0s;
+      }
+    .labb-service-text {
+      text-align: center;
+      max-width: 300px;
+      margin: 0 auto;
+      .labb-title {
+        @include labb-heading-style();
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 10px;
+        }
+      }
+    &:hover {
+      .labb-image-wrapper img {
+        transform: scale(0.9, 0.9);
+        }
+      }
+    }
+  }
+
+/* -------- General services -------- */
+
+.labb-services {
+  .labb-service {
+    margin-bottom: 50px;
+    .labb-icon-wrapper span {
+      transition: color .4s ease-in-out 0s;
+      }
+    .labb-service-text {
+      font-size: 15px;
+      line-height: 24px;
+      .labb-dark-bg & {
+        color: #909090;
+        .labb-title {
+          color: #e5e5e5;
+          }
+        }
+      }
+    }
+  }

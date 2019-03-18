@@ -1,0 +1,218 @@
+@import "../../../../assets/css/labb-lib";
+.labb-clients {
+  clear: both;
+  overflow: hidden;
+  margin: 0 auto;
+
+  @include grid-media($labb-mobile-only-grid) {
+    .labb-grid-mobile-1 {
+      .labb-grid-item:nth-child(1n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 1) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-mobile-2 {
+      .labb-grid-item:nth-child(2n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 2) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-mobile-3 {
+      .labb-grid-item:nth-child(3n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 3) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-mobile-4 {
+      .labb-grid-item:nth-child(4n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 4) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-mobile-5 {
+      .labb-grid-item:nth-child(5n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 5) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-mobile-6 {
+      .labb-grid-item:nth-child(6n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 6) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    }
+  @include grid-media($labb-tablet-only-grid) {
+
+    .labb-grid-tablet-1 {
+      .labb-grid-item:nth-child(1n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 1) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-tablet-2 {
+      .labb-grid-item:nth-child(2n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 2) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-tablet-3 {
+      .labb-grid-item:nth-child(3n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 3) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-tablet-4 {
+      .labb-grid-item:nth-child(4n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 4) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-tablet-5 {
+      .labb-grid-item:nth-child(5n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 5) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-tablet-6 {
+      .labb-grid-item:nth-child(6n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 6) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    }
+  @include grid-media($labb-desktop-grid) {
+    .labb-grid-desktop-1 {
+      .labb-grid-item:nth-child(1n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 1) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-desktop-2 {
+      .labb-grid-item:nth-child(2n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 2) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-desktop-3 {
+      .labb-grid-item:nth-child(3n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 3) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-desktop-4 {
+      .labb-grid-item:nth-child(4n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 4) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-desktop-5 {
+      .labb-grid-item:nth-child(5n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 5) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    .labb-grid-desktop-6 {
+      .labb-grid-item:nth-child(6n + 1) {
+        border-left: 1px solid #ddd;
+        }
+      .labb-grid-item:nth-child(-n + 6) {
+        border-top: 1px solid #ddd;
+        }
+      }
+    }
+  .labb-client {
+    position: relative;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    .labb-dark-bg & {
+      border-color: #505050 !important;
+      }
+    img {
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      -moz-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+      width: 100%;
+      margin: 0;
+      display: block;
+      }
+    .labb-client-name {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      margin-top: -12px;
+      color: #fff;
+      font-size: 18px;
+      line-height: 26px;
+      transition: opacity .4s ease-in-out 0s;
+      opacity: 0;
+      a {
+        color: #fff;
+        text-decoration: none;
+        }
+      }
+    .labb-image-overlay {
+      position: absolute;
+      left: 0;
+      top: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      filter: alpha(opacity=0);
+      -moz-opacity: 0;
+      opacity: 0;
+      transition: opacity .4s ease-in-out 0s;
+      }
+    &:hover {
+      .labb-image-overlay {
+        opacity: 0.7;
+        .labb-dark-bg & {
+          opacity: 0.8;
+          }
+        }
+      .labb-client-name {
+        opacity: 1;
+        }
+      }
+    }
+  }

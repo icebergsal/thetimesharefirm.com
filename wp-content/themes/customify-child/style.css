@@ -1,0 +1,127 @@
+/*
+Theme Name: Customify Child
+Theme URI: https://wpcustomify.com
+Template: customify
+Author: WPCustomify
+Author URI: https://wpcustomify.com/about
+Description: Customify is fast, lightweight, responsive and super flexible multipurpose theme built with SEO, speed, and usability in mind. Unleash the power of your imagination with a true WYSIWYG Header &amp; Footer builder (inside the WordPress Customizer) built exclusively for this theme. The theme works great with any of your favorite page builder likes Elementor, Beaver Builder, SiteOrigin, Thrive Architect, Divi, Visual Composer, etc. Combined with the Header &amp; Footer builder, you can build any type of websites like shop, business agencies, corporate, portfolio, education, university portal, consulting, church, restaurant, medical and so on. Customify is compatible with all well-coded plugins, including major ones like WooCommerce, OrbitFox, Yoast, BuddyPress, bbPress, etc. Learn more about the theme and ready to import demo sites at https://wpcustomify.com
+Tags: custom-background,custom-logo,custom-menu,featured-images,flexible-header,footer-widgets,full-width-template,sticky-post,theme-options,threaded-comments,translation-ready,one-column,two-columns,three-columns,left-sidebar,right-sidebar,e-commerce,blog
+Version: 0.2.8.1550562148
+Updated: 2019-02-19 07:42:28
+
+*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 15px !important;
+    line-height: 25px !important;
+    margin-bottom: 15px !important;
+}
+
+.labb-grid-item article {
+    border: solid 1px #eee !important;
+}
+
+.labb-entry-text-wrap {
+    padding: 20px 25px;
+}
+
+#cf-head h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+	font-size: 16px;
+	line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#cf-head h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#cf-head {
+    background: #d21e2b;
+    padding: 20px 25px;
+    text-align: center;
+}
+
+#cf-body {
+    padding: 25px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+#cf-body input {
+    font-family: 'Poppins', sans-serif;
+    box-shadow: none;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 25px;
+    height: 45px;
+    border: solid 1px #999;
+}
+
+.wpcf7-form-control.wpcf7-submit {
+    background: #d21e2b !important;
+    display: block !important;
+    width: 100%;
+}
+
+#cf-body {
+    padding: 25px 25px 10px;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+
+.wpcf7-form {
+    margin: 0;
+}
+
+.accordions-head {
+    background: #242424 !important;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px !important;
+}
+
+.accordion-content p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.custom-header-btn a {
+    background: #d21e2b;
+    color: #fff !important;
+    border-radius: 5px;
+}
+
+#page-titlebar {
+    background: #d21e2b !important;
+}
+
+.titlebar-title.h4 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+
+.widget-title {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #d21e2b;
+    padding: 12px 15px;
+    display: block;
+}
+
+.cp-contactform #cf-body {
+    padding: 40px 40px 10px !important;
+}

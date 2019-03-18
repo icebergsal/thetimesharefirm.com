@@ -1,0 +1,125 @@
+
+@import "../../../../assets/css/labb-lib";
+
+.labb-heading {
+  text-align: center;
+  margin: 0 auto 60px;
+  max-width: 640px;
+  @include respond-to-max(767) {
+    margin-bottom: 40px;
+    }
+  .labb-text {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto;
+    @include respond-to-max(767) {
+      font-size: 15px;
+      line-height: 26px;
+      }
+  }
+  &.labb-alignleft, &.labb-alignright {
+    margin: 0;
+    .labb-text {
+      margin: 0;
+      }
+    }
+  &.labb-alignleft {
+    text-align: left;
+    }
+  &.labb-alignright {
+    text-align: right;
+    }
+}
+
+.labb-heading {
+  .labb-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    margin: 0 auto 20px;
+    color: #333;
+    font-weight: bold;
+    @include respond-to-max(767) {
+      font-size: 24px;
+      line-height: 32px;
+      }
+    }
+    .labb-dark-bg  & {
+      .labb-title {
+        color: #e5e5e5;
+      }
+      .labb-subtitle {
+        color: #B0B0B0;
+      }
+      .labb-text {
+        color: #909090;
+      }
+    }
+
+  &.labb-alignleft, &.labb-alignright {
+    .labb-title {
+      margin: 0 0 20px;
+      }
+    }
+  }
+
+
+
+.labb-heading {
+
+  .labb-subtitle {
+    margin: 0 auto 5px;
+    color: #888;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+    @include respond-to-max(767) {
+      font-size: 11px;
+      line-height: 18px;
+      }
+    }
+  &.labb-alignleft, &.labb-alignright {
+    .labb-subtitle {
+      margin: 0 0 5px;
+      padding: 0;
+      &:before, &:after {
+        display: none;
+        }
+      }
+    }
+  }
+
+
+.labb-heading.labb-style3 {
+   margin: 0 auto 30px;
+  .labb-title {
+    font-size: 22px;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include bottom-line(35, 1, #aaa);
+    &:after {
+      margin: 10px auto 20px;
+      .labb-dark-bg & {
+        background: #909090;
+      }
+    }
+    @include respond-to-max(767) {
+      font-size: 16px;
+      line-height: 24px;
+      }
+    }
+
+  &.labb-alignleft, &.labb-alignright {
+    margin: 0 0 30px;
+    .labb-title:after {
+      margin: 10px 0 20px;
+      }
+    }
+  }
+

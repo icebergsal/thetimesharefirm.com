@@ -1,0 +1,871 @@
+@import "bourbon";
+@import "neat";
+@import "grid-settings";
+@import "labb-lib";
+
+/* --------------- Reset styles --------- */
+
+.panel-grid .widget {
+  overflow: initial;
+  }
+.labb-container, .labb-grid-container {
+  box-sizing: border-box;
+  *, *::after, *::before {
+    box-sizing: inherit;
+    }
+  ol, ul, ol > li, ul > li, ol:hover, ul:hover, ul > li:hover, ol > li:hover, ol > li > a, ul > li > a, ol > li > a:hover, ul > li > a:hover, img {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    list-style: none;
+    background: none;
+    &:before, &:after {
+      display: none;
+      }
+    }
+  a {
+    text-decoration: initial;
+    }
+  img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    }
+  }
+/* ------- General styles ------------ */
+
+.labb-container {
+  @include labb-container;
+  margin-left: auto;
+  margin-right: auto;
+  }
+.panel-grid .widget {
+  border: 0;
+  }
+.labb-center {
+  text-align: center;
+  }
+.labb-grid-container {
+  @include grid-container;
+  @include grid-collapse();
+
+  .labb-grid-item {
+    min-height: 1px; /* Prevents columns from collapsing when housing absolute elements or when lazy loading content */
+    }
+
+
+  @include grid-media($labb-mobile-only-grid) {
+    &.labb-grid-mobile-2 {
+      .labb-grid-item {
+        @include omega(2n);
+        }
+      }
+
+    &.labb-grid-mobile-3 {
+      .labb-grid-item {
+        @include omega(3n);
+        }
+      }
+
+    &.labb-grid-mobile-4 {
+      .labb-grid-item {
+        @include omega(4n);
+        }
+      }
+
+    &.labb-grid-mobile-5 {
+      .labb-grid-item {
+        @include omega(5n);
+        }
+      }
+
+    &.labb-grid-mobile-6 {
+      .labb-grid-item {
+        @include omega(6n);
+        }
+      }
+    }
+
+  @include grid-media($labb-tablet-only-grid) {
+    &.labb-grid-tablet-2 {
+      .labb-grid-item {
+        @include omega(2n);
+        }
+      }
+
+    &.labb-grid-tablet-3 {
+      .labb-grid-item {
+        @include omega(3n);
+        }
+      }
+
+    &.labb-grid-tablet-4 {
+      .labb-grid-item {
+        @include omega(4n);
+        }
+      }
+
+    &.labb-grid-tablet-5 {
+      .labb-grid-item {
+        @include omega(5n);
+        }
+      }
+
+    &.labb-grid-tablet-6 {
+      .labb-grid-item {
+        @include omega(6n);
+        }
+      }
+    }
+  @include grid-media($labb-desktop-grid) {
+    &.labb-grid-desktop-2 {
+      .labb-grid-item {
+        @include omega(2n);
+        }
+      }
+
+    &.labb-grid-desktop-3 {
+      .labb-grid-item {
+        @include omega(3n);
+        }
+      }
+
+    &.labb-grid-desktop-4 {
+      .labb-grid-item {
+        @include omega(4n);
+        }
+      }
+
+    &.labb-grid-desktop-5 {
+      .labb-grid-item {
+        @include omega(5n);
+        }
+      }
+
+    &.labb-grid-desktop-6 {
+      .labb-grid-item {
+        @include omega(6n);
+        }
+      }
+    }
+
+
+
+  &.labb-grid-mobile-1 {
+
+    .labb-grid-item {
+      @include grid-column(12);
+      }
+    }
+  &.labb-grid-mobile-2 {
+
+    .labb-grid-item {
+      @include grid-column(6);
+      }
+    }
+
+  &.labb-grid-mobile-3 {
+
+    .labb-grid-item {
+      @include grid-column(4);
+      }
+    }
+
+  &.labb-grid-mobile-4 {
+
+    .labb-grid-item {
+      @include grid-column(3);
+      }
+    }
+
+  &.labb-grid-mobile-5 {
+
+    .labb-grid-item {
+      @include grid-column(1, $labb-five-col-grid);
+      }
+    }
+
+  &.labb-grid-mobile-6 {
+
+    .labb-grid-item {
+      @include grid-column(2);
+      }
+    }
+
+  @include grid-media($labb-tablet-grid) {
+
+    &.labb-grid-tablet-1 {
+
+      .labb-grid-item {
+        @include grid-column(12);
+        }
+      }
+    &.labb-grid-tablet-2 {
+
+      .labb-grid-item {
+        @include grid-column(6);
+        }
+      }
+
+    &.labb-grid-tablet-3 {
+
+      .labb-grid-item {
+        @include grid-column(4);
+        }
+      }
+
+    &.labb-grid-tablet-4 {
+
+      .labb-grid-item {
+        @include grid-column(3);
+        }
+      }
+
+    &.labb-grid-tablet-5 {
+
+      .labb-grid-item {
+        @include grid-column(1, $labb-five-col-grid);
+        }
+      }
+
+    &.labb-grid-tablet-6 {
+
+      .labb-grid-item {
+        @include grid-column(2);
+        }
+      }
+    }
+
+  @include grid-media($labb-desktop-grid) {
+
+    &.labb-grid-desktop-1 {
+
+      .labb-grid-item {
+        @include grid-column(12);
+        }
+      }
+    &.labb-grid-desktop-2 {
+
+      .labb-grid-item {
+        @include grid-column(6);
+        }
+      }
+
+    &.labb-grid-desktop-3 {
+
+      .labb-grid-item {
+        @include grid-column(4);
+        }
+      }
+
+    &.labb-grid-desktop-4 {
+
+      .labb-grid-item {
+        @include grid-column(3);
+        }
+      }
+
+    &.labb-grid-desktop-5 {
+
+      .labb-grid-item {
+        @include grid-column(1, $labb-five-col-grid);
+        }
+      }
+
+    &.labb-grid-desktop-6 {
+
+      .labb-grid-item {
+        @include grid-column(2);
+        }
+      }
+    }
+  }
+/*--------- Gapless grid columns ----*/
+
+.labb-gapless-grid {
+
+  .labb-grid-container {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+
+    &.labb-grid-mobile-1 {
+
+      .labb-grid-item {
+        @include grid-column(12, $labb-gapless-grid);
+        }
+      }
+    &.labb-grid-mobile-2 {
+
+      .labb-grid-item {
+        @include grid-column(6, $labb-gapless-grid);
+        }
+      }
+
+    &.labb-grid-mobile-3 {
+
+      .labb-grid-item {
+        @include grid-column(4, $labb-gapless-grid);
+        }
+      }
+
+    &.labb-grid-mobile-4 {
+
+      .labb-grid-item {
+        @include grid-column(3, $labb-gapless-grid);
+        }
+      }
+
+    &.labb-grid-mobile-5 {
+      .labb-grid-item {
+        @include grid-column(1, $labb-gapless-five-col-grid);
+        }
+      }
+
+    &.labb-grid-mobile-6 {
+
+      .labb-grid-item {
+        @include grid-column(2, $labb-gapless-grid);
+        }
+      }
+
+    @include grid-media($labb-tablet-grid) {
+
+      &.labb-grid-tablet-1 {
+        .labb-grid-item {
+          @include grid-column(12, $labb-gapless-grid);
+          }
+        }
+
+      &.labb-grid-tablet-2 {
+        .labb-grid-item {
+          @include grid-column(6, $labb-gapless-grid);
+          }
+        }
+
+      &.labb-grid-tablet-3 {
+        .labb-grid-item {
+          @include grid-column(4, $labb-gapless-grid);
+          }
+        }
+      &.labb-grid-tablet-4 {
+        .labb-grid-item {
+          @include grid-column(3, $labb-gapless-grid);
+          }
+        }
+      &.labb-grid-tablet-5 {
+        .labb-grid-item {
+          @include grid-column(1, $labb-gapless-five-col-grid);
+          }
+        }
+      &.labb-grid-tablet-6 {
+        .labb-grid-item {
+          @include grid-column(2, $labb-gapless-grid);
+          }
+        }
+      }
+
+    @include grid-media($labb-desktop-grid) {
+
+      &.labb-grid-desktop-1 {
+        .labb-grid-item {
+          @include grid-column(12, $labb-gapless-grid);
+          }
+        }
+
+      &.labb-grid-desktop-2 {
+        .labb-grid-item {
+          @include grid-column(6, $labb-gapless-grid);
+          }
+        }
+
+      &.labb-grid-desktop-3 {
+        .labb-grid-item {
+          @include grid-column(4, $labb-gapless-grid);
+          }
+        }
+      &.labb-grid-desktop-4 {
+        .labb-grid-item {
+          @include grid-column(3, $labb-gapless-grid);
+          }
+        }
+      &.labb-grid-desktop-5 {
+        .labb-grid-item {
+          @include grid-column(1, $labb-gapless-five-col-grid);
+          }
+        }
+      &.labb-grid-desktop-6 {
+        .labb-grid-item {
+          @include grid-column(2, $labb-gapless-grid);
+          }
+        }
+      }
+    }
+  }
+
+/* ---------- Masonry Layout Grid columns -------------*/
+
+.labb-gapless-grid .labb-masonry {
+
+  /* Clear the omega for masonry layout */
+  .labb-grid-item {
+    clear: none !important;
+    }
+
+  .labb-grid-sizer {
+    @include grid-column(1, $labb-gapless-grid);
+    }
+
+  &.labb-grid-mobile-1 {
+
+    .labb-grid-item.labb-wide {
+      @include grid-column(12, $labb-gapless-grid);
+      }
+    }
+  &.labb-grid-mobile-2 {
+
+    .labb-grid-item.labb-wide {
+      @include grid-column(6, $labb-gapless-grid); // keep it small for now
+      }
+    }
+
+  &.labb-grid-mobile-3 {
+
+    .labb-grid-item.labb-wide {
+      @include grid-column(8, $labb-gapless-grid);
+      }
+    }
+
+  &.labb-grid-mobile-4 {
+
+    .labb-grid-item.labb-wide {
+      @include grid-column(6, $labb-gapless-grid);
+      }
+    }
+
+  &.labb-grid-mobile-5 {
+
+    .labb-grid-item.labb-wide {
+      @include grid-column(2, $labb-gapless-five-col-grid);
+      }
+    }
+
+  &.labb-grid-mobile-6 {
+
+    .labb-grid-item.labb-wide {
+      @include grid-column(4, $labb-gapless-grid);
+      }
+    }
+
+  @include grid-media($labb-tablet-grid) {
+
+    &.labb-grid-tablet-1 {
+
+      .labb-grid-item.labb-wide {
+        @include grid-column(12, $labb-gapless-grid);
+        }
+      }
+    &.labb-grid-tablet-2 {
+
+      .labb-grid-item.labb-wide {
+        @include grid-column(6, $labb-gapless-grid); // keep it small for now
+        }
+      }
+
+    &.labb-grid-tablet-3 {
+
+      .labb-grid-item.labb-wide {
+        @include grid-column(8, $labb-gapless-grid);
+        }
+      }
+
+    &.labb-grid-tablet-4 {
+
+      .labb-grid-item.labb-wide {
+        @include grid-column(6, $labb-gapless-grid);
+        }
+      }
+
+    &.labb-grid-tablet-5 {
+
+      .labb-grid-item.labb-wide {
+        @include grid-column(2, $labb-gapless-five-col-grid);
+        }
+      }
+
+    &.labb-grid-tablet-6 {
+
+      .labb-grid-item.labb-wide {
+        @include grid-column(4, $labb-gapless-grid);
+        }
+      }
+
+    }
+
+  @include grid-media($labb-desktop-grid) {
+
+
+    &.labb-grid-desktop-1 {
+
+      .labb-grid-item.labb-wide {
+        @include grid-column(12, $labb-gapless-grid);
+        }
+      }
+    &.labb-grid-desktop-2 {
+
+      .labb-grid-item.labb-wide {
+        @include grid-column(6, $labb-gapless-grid); // keep it small for now
+        }
+      }
+
+    &.labb-grid-desktop-3 {
+
+      .labb-grid-item.labb-wide {
+        @include grid-column(8, $labb-gapless-grid);
+        }
+      }
+
+    &.labb-grid-desktop-4 {
+
+      .labb-grid-item.labb-wide {
+        @include grid-column(6, $labb-gapless-grid);
+        }
+      }
+
+    &.labb-grid-desktop-5 {
+
+      .labb-grid-item.labb-wide {
+        @include grid-column(2, $labb-gapless-five-col-grid);
+        }
+      }
+
+    &.labb-grid-desktop-6 {
+
+      .labb-grid-item.labb-wide {
+        @include grid-column(4, $labb-gapless-grid);
+        }
+      }
+    }
+  }
+
+/* --------------- Flexslider Styles -------------- */
+
+.labb-container {
+  .labb-thumbnailslider.labb-flexslider {
+    margin-top: 15px;
+    .labb-slide {
+      margin: 0 5px 0 0;
+      img {
+        display: block;
+        opacity: .5;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+          }
+        }
+      &.labb-flex-active-slide img {
+        opacity: 1;
+        cursor: default;
+        }
+      }
+    }
+  .labb-flex-direction-nav {
+    padding: 0 !important;
+    margin: 0 !important;
+    }
+  .labb-flex-direction-nav li {
+    position: initial;
+    }
+  .labb-flex-direction-nav a, .labb-flex-direction-nav a:hover {
+    opacity: 1;
+    text-shadow: none;
+    background: none;
+    color: #888;
+    @include labb-icon-font();
+    font-size: 24px;
+    width: 28px;
+    height: 28px;
+    margin: -14px 0 0;
+    bottom: initial;
+    left: initial;
+    right: initial;
+    top: 50%;
+    text-indent: 0;
+    text-align: center;
+    color: #aaa;
+    transition: all 0.3s ease-in-out 0s;
+    outline: none;
+    &:before {
+      margin: 2px;
+      vertical-align: middle;
+      display: inline;
+      font-family: inherit !important;
+      opacity: 1;
+      }
+    .labb-dark-bg & {
+      color: #888;
+      &:hover {
+        color: #aaa;
+        }
+      }
+    @include respond-to-max(960) {
+      display: none; /* Let users navigate via touch */
+      }
+    }
+  .labb-flex-direction-nav a.labb-flex-prev {
+    left: -30px;
+    &:before {
+      content: "\e900";
+      }
+    }
+  .labb-flex-direction-nav a.labb-flex-next {
+    right: -30px;
+    &:before {
+      content: "\e901";
+      }
+    }
+  .labb-flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -40px;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    li, li:hover {
+      margin: 0 8px 0 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      }
+    li a, li a:hover {
+      background: #aaa;
+      border: 1px solid #aaa;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      box-shadow: none;
+      transition: all 0.2s ease-in 0s;
+      display: inline-block;
+      vertical-align: middle;
+      outline: none;
+      .labb-dark-bg & {
+        background: #ccc;
+        border-color: #ccc;
+        }
+      }
+    li a.labb-flex-active, li a:hover.labb-flex-active, li a:hover {
+      background: none;
+      }
+    li a.labb-flex-active, li a:hover.labb-flex-active {
+      width: 14px;
+      height: 14px;
+      }
+    }
+  .labb-flex-control-thumbs {
+    bottom: -120px;
+    @include respond-to-max(600) {
+      bottom: -80px;
+      }
+    li {
+      width: auto;
+      float: none;
+      img {
+        max-width: 100%;
+        width: 150px;
+        @include respond-to-max(600) {
+          width: 100px;
+          }
+        }
+      }
+    }
+  }
+/* Sleek Carousel Styles */
+
+.slick-loading .slick-list {
+  background: #fff url('./ajax-loader.gif') center center no-repeat;
+  }
+.labb-container {
+
+  button.slick-prev, button.slick-next {
+    position: absolute;
+    bottom: initial;
+    left: initial;
+    right: initial;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+    margin: -14px 0 0;
+    &, &:before, &:after {
+      text-shadow: none;
+      background: none !important;
+      border: none;
+      padding: 0;
+      opacity: 1;
+      @include labb-icon-font();
+      font-size: 24px;
+      color: #aaa !important;
+      overflow: hidden;
+      box-shadow: none;
+      outline: none;
+      text-indent: 0;
+      text-align: center;
+      transition: all 0.3s ease-in-out 0s;
+      }
+    &:before {
+      margin: 2px;
+      vertical-align: middle;
+      }
+    &:hover {
+      &:before, &:after {
+        color: #888 !important;
+        }
+      }
+    .labb-dark-bg & {
+      &:before, &:after {
+        color: #888 !important;
+        }
+      &:hover {
+        &:before, &:after {
+          color: #aaa !important;
+          background: none !important;
+          }
+        }
+      }
+    @include respond-to-max(1024) {
+      display: none !important; /* Let users navigate via touch */
+      }
+    }
+  button.slick-prev {
+    left: -40px;
+    &:before {
+      content: "\e900";
+      }
+    }
+  button.slick-next {
+    right: -40px;
+    &:before {
+      content: "\e901";
+      }
+    }
+  ul.slick-dots {
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    li {
+      margin: 0 8px 0 0 !important;
+      padding: 0 !important;
+      display: inline-block;
+      font-size: 0;
+      }
+    li button {
+      padding: 0;
+      background: #aaa;
+      border: 1px solid #aaa;
+      border-radius: 50%;
+      width: 12px;
+      height: 12px;
+      box-shadow: none;
+      transition: background 0.3s ease-in-out 0s;
+      font-size: 0;
+      outline: none;
+      .labb-dark-bg & {
+        background: #888 !important;
+        border-color: #888 !important;
+        }
+      }
+    li button:hover, li.slick-active button {
+      background: none !important;
+      border-color: #aaa !important;
+      }
+    li.slick-active button {
+      width: 14px;
+      height: 14px;
+      }
+    }
+  }
+/* -------- Widget separator headline ------------ */
+
+.labb-widget-heading {
+  @include labb-heading-style();
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  @include respond-to-max(767) {
+    font-size: 32px;
+    line-height: 44px;
+    }
+  }
+
+/* --------------- Button CSS -------------------- */
+
+input.labb-button, button.labb-button, a.labb-button, .labb-button:active, .labb-button:visited {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 16px 40px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #f94213;
+  color: #fefefe;
+  outline: none;
+  transition: all 0.4s ease-in-out 0s;
+  &.labb-rounded {
+    border-radius: 999px;
+    }
+  &.labb-large {
+    padding: 20px 60px;
+    }
+  &.labb-small {
+    padding: 12px 25px;
+    font-size: 11px;
+    }
+  &:hover {
+    background-color: #f9633e;
+    color: #fefefe;
+    }
+  }
+$skin-names: ("black", "blue", "cyan", "green", "orange", "pink", "red", "teal");
+$color-collection: (#363636, #46a5d5, #57c0dc, #00a57d, #e87151, #dd5679, #da4f49, #28c2ba);
+
+@for $i from 0 to length($skin-names) {
+  $skin-name: nth($skin-names, $i+1);
+  $skin-color: nth($color-collection, $i+1);
+  .labb-button.labb-#{$skin-name} {
+    background-color: $skin-color;
+    }
+  .labb-button.labb-#{$skin-name}:hover {
+    background-color: lighten($skin-color, 5%);
+    }
+  }
+.labb-button.labb-trans {
+  color: #333;
+  background-color: transparent; /* IE */
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #a5a5a5;
+  &:hover {
+    background-color: #fff;
+    color: #333 !important;
+    border-color: #fff;
+    }
+  }
+.labb-button.labb-semitrans {
+  color: #fff;
+  background-color: transparent; /* IE */
+  background-color: rgba(125, 125, 125, 0.5);
+  &:hover {
+    background-color: #fff;
+    color: #333 !important;
+    }
+  }
